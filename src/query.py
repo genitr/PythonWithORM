@@ -47,7 +47,7 @@ def get_sale_data(value: str) -> CursorResult:
         sl.price.label("sale_price"),
         sl.date_sale.label("date_sale")
     ).select_from(bk).join(st).join(sh).join(sl).where(bk.id_publisher == subq).order_by(bk.title)
-
+    print(query)
     with session_factory() as session:
         data = session.execute(query)
 
