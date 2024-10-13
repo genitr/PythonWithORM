@@ -1,0 +1,4 @@
+prettytable~=3.11.0
+SQLAlchemy~=2.0.35
+python-dotenv~=1.0.1
+psycopg2~=2.9.9
